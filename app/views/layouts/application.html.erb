@@ -46,8 +46,10 @@
             </span>
             <span ng-if="activity.type ==='PushEvent'">
                  <li>Pushed the following commits</li>
-											   <ol ng-repeat="commit in activity.payload.commits">
-               <li><a ng-href="{{commit.url}}">{{commit.message}}</a>
+           <ol>
+											   <li ng-repeat="commit in activity.payload.commits">
+               <a ng-href="{{commit.url}}">{{commit.message}}</a>
+           </li>
                </ol>
             </span>
            </ul>											   </div>
