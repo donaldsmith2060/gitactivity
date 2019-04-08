@@ -1,5 +1,5 @@
 angular.module('gitactivity', [])
-.controller('ActivityController', 
+.controller('ActivityController', ["$scope", "$http",
 	function($scope, $http){
 		 
 	$scope.activities=[];
@@ -19,4 +19,4 @@ angular.module('gitactivity', [])
 
 
 
-	});
+	}]);
